@@ -23,7 +23,7 @@ try {
          withCredentials([string(credentialsId:"bleon-sp",variable:'azcre')]){
             //token : CLIENT_ID|CLIENT_SECRET|TENANT_ID|SUBSCRIPTION_ID
 
-            spcre = azcre.split('\\|')
+            spcredential = azcre.split('\\|')
             clientId=spcredential[0]     
             clientse=spcredential[1] 
             tenantId=spcredential[2]
