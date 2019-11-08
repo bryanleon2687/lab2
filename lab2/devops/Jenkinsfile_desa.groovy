@@ -29,7 +29,7 @@ try {
             tenantId=spcredential[2]
             subscrId=spcredential[3]
 
-          sh = "docker build -t az-demo:1.0 --build-arg --build-arg CLIENT_ID=${clientId} --build-arg CLIENT_SECRET=${clientse} --build-arg TENANT_ID=${tenantId} --build-arg SUBSCRIPTION_ID=${subscrId}"
+          sh = "docker build -t az-demo:1.0 --build-arg --build-arg CLIENT_ID=${clientId} --build-arg CLIENT_SECRET=${clientse} --build-arg TENANT_ID=${tenantId} --build-arg SUBSCRIPTION_ID=${subscrId} ."
 
 
    }
