@@ -43,7 +43,7 @@ try {
 } 
 stage("Terraform init"){
 
-   sh "docker run --rm -v ${WORKSPACE}/source/aks-rbac-example:/iac --name az-runarq az-demo:1.0 terraform init"
+   sh "docker run --rm -v ${WORKSPACE}/source:/iac --name az-runarq az-demo:1.0 terraform init"
 }
    }
 }
